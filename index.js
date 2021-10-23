@@ -5,11 +5,16 @@ const app=express()
 // app.get("/data",(req,res)=>{
 //     res.send("yese")
 // })
-app.get("/:data",(req,res)=>{
+app.get("/api/:data",(req,res)=>{
     let data=req.params.data
     fs.writeFileSync(`./data.js`,data)
 
     res.send("done")
+})
+app.get("/okdeta",(req,res)=>{
+  
+
+    res.send("okdeata")
 })
 
 const PORT=process.env.PORT || 4000
