@@ -11,10 +11,9 @@ app.get("/api/:data",(req,res)=>{
 
     res.send("done")
 })
-app.get("/okdeta",(req,res)=>{
-  
+app.get("/ok",(req,res)=>{
 
-    res.send("okdeata")
+    res.send("ok")
 })
 
 const PORT=process.env.PORT || 4000
